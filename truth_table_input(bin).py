@@ -35,8 +35,11 @@ def sort(bi,temp):
     out.append(o)
   for i in out:
     print(i)
-
+import sys
 n=int(input())
+if n==0:
+  print(0)
+  sys.exit(0)
 t=2**n
 b=[[0]*n for _ in range(t)]
 c1,c2=len(b),len(b)
